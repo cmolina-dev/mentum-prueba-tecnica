@@ -13,6 +13,7 @@ builder.Services.AddDbContext<MentumDbContext>(options =>
 
 // Registrar servicios
 builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddScoped<IContactoService, ContactoService>();
 
 
 var app = builder.Build();
@@ -25,7 +26,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
+
 app.UseRouting();
 
 app.UseAuthorization();
