@@ -63,3 +63,6 @@ appsettings.*.json
 # OS files
 .DS_Store
 Thumbs.db
+
+# Librerías frontend gestionadas por LibMan
+WebApp/wwwroot/lib/
